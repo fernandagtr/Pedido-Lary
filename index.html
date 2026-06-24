@@ -371,8 +371,9 @@
             document.body.appendChild(particle);
 
             setTimeout(() => {
-                particle.remove();
-            }, duration * 1000);
+            c.remove();
+            clearInterval(fall);
+            }, 4000);
         }
     </script>
 </body>
